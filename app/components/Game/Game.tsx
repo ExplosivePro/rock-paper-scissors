@@ -5,6 +5,7 @@ import GameChoice from '../GameChoice/GameChoice';
 import styles from './style.module.css';
 import { useGameContext } from '@/app/contexts/GameContext';
 import { useRecordContext } from '@/app/contexts/RecordContext';
+import ChoiceForm from '../ChoiceForm/ChoiceForm';
 
 const Game: React.FC = () => {
     const { playerChoice, setPlayerChoice, gameResult, setGameResult, computerChoice, setComputerChoice, replay } = useGameContext();
@@ -34,23 +35,28 @@ const Game: React.FC = () => {
 
     return (
         <div className={styles["result-container"]}>
-            <div>
-                <div className={styles["choice-label"]}>You picked</div>
-                <GameChoice choice={playerChoice}/>
-            </div>
-            {gameResult ? (
-                <div>
-                    <div className={styles['game-result']}>you {gameResult}</div>
-                    <button className={styles['game-replay']} onClick={replay}>Play Again</button>
-                </div>
-            ): null}
-            <div>
-                <div className={styles["choice-label"]}>The house picked</div>
-                <GameChoice choice={computerChoice}/>
-            </div>
+            { playerChoice ? (
+                <>
+                    <div>
+                        <div className={styles["choice-label"]}>You picked</div>
+                        <GameChoice choice={playerChoice}/>
+                    </div>
+                    {gameResult ? (
+                        <div>
+                            <div className={styles['game-result']}>you {gameResult}</div>
+                            <button className={styles['game-replay']} onClick={replay}>Play Again</button>
+                        </div>
+                    ): null}
+                    <div>
+                        <div className={styles["choice-label"]}>The house picked</div>
+                        <GameChoice choice={computerChoice}/>
+                    </div>
+                </>
+            ) : (
+                <ChoiceForm />
+            )}
         </div>
     )
 };
 
 export default Game;
-export type { GameProps };

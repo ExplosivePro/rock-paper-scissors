@@ -7,9 +7,9 @@ interface GameChoiceProps extends React.ComponentProps<"div"> {
     choice: Choice;
 }
 
-const GameChoice: React.FC<GameChoiceProps> = ({ choice }) => {
+const GameChoice: React.FC<GameChoiceProps> = ({ choice, className }) => {
     return (
-        <div>
+        <div className={`${styles["choice-btn"]} ${className ? styles[className] : ''}`}>
             {choice ? (
                 <>
                 <div className={`${styles["choice-outer-btn"]} ${styles[`choice-${choice}`]}`}></div>
