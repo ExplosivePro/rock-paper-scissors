@@ -1,13 +1,8 @@
-import { useEffect, useState } from 'react';
 import styles from './style.module.css';
-import { Choice } from '@/app/types';
+import { useRecordContext } from '@/app/contexts/RecordContext';
 
-interface RecordProps extends React.ComponentProps<"div"> {
-    records: Choice[],
-    score: number
-}
-
-const Record: React.FC<RecordProps> = ({records, score}) => {
+const Record: React.FC = () => {
+    const { records, score } = useRecordContext();
     return (
         <div className={styles['record-wrapper']}>
             <div>
@@ -24,4 +19,3 @@ const Record: React.FC<RecordProps> = ({records, score}) => {
 };
 
 export default Record;
-export type { RecordProps };

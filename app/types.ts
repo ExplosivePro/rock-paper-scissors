@@ -5,9 +5,10 @@
 export type Choice = 'rock' | 'paper' | 'scissors' | null;
 
 /** 
- * The result for each game
+ * The result for each game.
+ * Null means result not determined yet
  */
-export type Result = 'win' | 'lose' | 'draw';
+export type Result = 'win' | 'lose' | 'draw' | null;
 
 /** 
  * The interface for representing status of the game 

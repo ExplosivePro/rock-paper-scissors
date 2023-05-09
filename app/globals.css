@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply flex flex-col h-screen items-center w-screen p-12;
+  @apply flex flex-col h-screen items-center w-screen p-12 uppercase;
   background-image: radial-gradient(
     circle at center top,
     var(--background-start-rgb),

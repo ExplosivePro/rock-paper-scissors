@@ -7,7 +7,7 @@ export function getRandomChoice(): Choice {
 
 
 export function getOutcome(playerChoice: Choice, computerChoice: Choice): Result {
-  if (playerChoice === computerChoice) return 'draw';
+  if ( playerChoice === computerChoice) return 'draw';
 
   const winningChoices = {
     rock: 'scissors',
