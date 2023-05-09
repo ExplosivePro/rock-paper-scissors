@@ -1,0 +1,7 @@
+.result-container {
+    @apply grid grid-cols-2 gap-16 text-lg text-white font-bold uppercase text-center;
+}
+
+.choice-label {
+    @apply m-8;
+}

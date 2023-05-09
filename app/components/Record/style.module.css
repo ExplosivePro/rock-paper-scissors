@@ -1,0 +1,16 @@
+.record-wrapper {
+    @apply flex flex-row justify-between items-center border-4 border-slate-500 w-1/2 rounded-xl p-4 text-white;
+    .record-item {
+        @apply text-xl uppercase font-bold;
+    }
+    .record-score {
+        @apply text-gray-600 bg-white w-32 rounded-xl flex flex-col items-center justify-center h-32;
+        
+    }
+    .record-score-label {
+        @apply text-blue-600 text-lg;
+    }
+    .record-score-value {
+        @apply text-5xl font-bold;
+    }
+}

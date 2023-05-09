@@ -1,0 +1,28 @@
+.choice-outer-btn {
+    @apply w-64 h-64 rounded-full absolute;
+    box-shadow: 0 10px var(--tw-shadow-color);
+    border-width: 35px;
+}
+.choice-rock {
+    @apply border-rose-500 shadow-rose-600;
+}
+.choice-paper {
+    @apply border-sky-500 shadow-sky-600;
+}
+.choice-scissors {
+    @apply border-yellow-500 shadow-yellow-600;
+}
+.choice-spock {
+    @apply border-cyan-500 shadow-cyan-600;
+}
+.choice-lizard {
+    @apply border-violet-500 shadow-violet-600;
+}
+
+.choice-inner-btn {
+    @apply w-64 h-64 bg-white rounded-full flex items-center justify-center;
+    box-shadow: inset 0px 30px 0 16px #b9c0d3;
+}
+.choice-empty {
+    @apply bg-[#17223e] w-56 h-56 rounded-full;
+}
