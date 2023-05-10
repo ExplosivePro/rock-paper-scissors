@@ -2,7 +2,7 @@
  * The type used for notifying the choice
  * Null means not selected yet
  */
-export type Choice = 'rock' | 'paper' | 'scissors' | null;
+export type Choice = 'rock' | 'paper' | 'scissors' | 'spock' | 'lizard'| null;
 
 /** 
  * The result for each game.

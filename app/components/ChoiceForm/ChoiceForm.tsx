@@ -8,7 +8,7 @@ import GameChoice from '../GameChoice/GameChoice';
 import { useGameContext } from '@/app/contexts/GameContext';
 import { Choice } from '@/app/types';
 const ChoiceSchema = z.object({
-  choice: z.enum(['rock', 'paper', 'scissors']),
+  choice: z.enum(['rock', 'paper', 'scissors', 'spock', 'lizard']),
 });
 
 const ChoiceForm: React.FC = () => {

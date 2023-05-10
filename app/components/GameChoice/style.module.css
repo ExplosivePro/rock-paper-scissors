@@ -1,21 +1,24 @@
+.choice-btn {
+    @apply flex justify-center;
+}
 .choice-btn:active, .choice-btn.active {
-    @apply translate-y-4 rounded-full;
+    @apply translate-y-2 rounded-full;
     box-shadow: 1px 1px 50px 10px var(--tw-shadow-color);
     .choice-outer-btn {
         box-shadow: 0 5px var(--tw-shadow-color);
     }
     .choice-inner-btn {
-        box-shadow: inset 0px 25px 0 15px #b9c0d3;
+        box-shadow: inset 0px 20px 0 15px #b9c0d3;
     }
 }
 .choice-btn.win .win-animation {
-    @apply animate-ping absolute w-64 h-64 rounded-full opacity-10 bg-gradient-radial from-blue-100 to-blue-600;
+    @apply animate-ping absolute w-48 h-48 rounded-full opacity-10 bg-gradient-radial from-blue-100 to-blue-600;
 }
 
 .choice-outer-btn {
-    @apply w-64 h-64 rounded-full absolute cursor-pointer;
-    box-shadow: 0 10px var(--tw-shadow-color);
-    border-width: 35px;
+    @apply w-48 h-48 rounded-full absolute cursor-pointer;
+    box-shadow: 0 6px var(--tw-shadow-color);
+    border-width: 30px;
 }
 .choice-rock {
     @apply shadow-rose-600;
@@ -49,9 +52,9 @@
 }
 
 .choice-inner-btn {
-    @apply w-64 h-64 bg-white rounded-full flex items-center justify-center;
-    box-shadow: inset 0px 30px 0 16px #b9c0d3;
+    @apply w-48 h-48 bg-white rounded-full flex items-center justify-center;
+    box-shadow: inset 0px 20px 0 18px #b9c0d3;
 }
 .choice-empty {
-    @apply bg-[#17223e] w-56 h-56 rounded-full;
+    @apply bg-[#17223e] w-48 h-48 rounded-full;
 }

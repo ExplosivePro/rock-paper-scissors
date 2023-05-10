@@ -17,8 +17,8 @@ const GameChoice: React.FC<GameChoiceProps> = ({ choice, className }) => {
                         <Image
                             src={`/images/icon-${choice}.svg`}
                             alt={choice ?? "game choice"}
-                            width={80}
-                            height={80}
+                            width={60}
+                            height={60}
                         />
                     </div>
                 </>

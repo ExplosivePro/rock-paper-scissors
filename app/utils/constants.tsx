@@ -1,1 +1,1 @@
-export const choices = ['rock', 'paper', 'scissors'];
+export const choices = ['rock', 'paper', 'scissors', 'spock', 'lizard'];
