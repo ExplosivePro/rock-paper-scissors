@@ -1,6 +1,5 @@
 import styles from './style.module.css';
 import { Choice } from '@/app/types';
-import Image from 'next/image';
 
 interface GameChoiceProps extends React.ComponentProps<"div"> {
     choice: Choice;
@@ -15,11 +14,10 @@ const GameChoice: React.FC<GameChoiceProps> = ({ choice, className }) => {
                 <div className={`${styles["choice-outer-btn"]}`}></div>
                     <div className={styles["choice-inner-btn"]}>
                         <div className={styles["choice-image-wrapper"]}>
-                            <Image
+                            <img
                                 className={styles["choice-image"]}
                                 src={`/images/icon-${choice}.svg`}
                                 alt={choice ?? "game choice"}
-                                fill
                             />
                         </div>
                     </div>

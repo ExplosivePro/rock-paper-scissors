@@ -1,4 +1,4 @@
-This is a [Rock, Paper, Scissors](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH) solution. It is using [Next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/).
+This is a simple [Rock, Paper, Scissors](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH) game. It is using [Next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/).
 
 # Live Version
 You can play the game [here](https://rock-paper-scissors.vercel.app).
