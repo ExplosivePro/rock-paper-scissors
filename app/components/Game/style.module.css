@@ -1,9 +1,16 @@
 .result-container {
-    @apply flex flex-row gap-16 text-lg text-white font-bold text-center items-center transition-[width] duration-1000;
+    @apply flex flex-row gap-16 lg:text-lg text-sm text-white font-bold text-center items-center transition-[width] duration-1000;
+}
+
+.result-container:has(.choice-wrapper) {
+    @apply grid grid-cols-2 lg:flex lg:flex-row;
+}
+.choice-wrapper {
+    @apply flex flex-col-reverse items-center m-8;
 }
 
 .choice-label {
-    @apply m-8;
+    @apply lg:m-8 w-max mt-8;
 }
 
 .result-replay {
@@ -19,6 +26,7 @@
 }
 
 .game-result-wrapper {
+    @apply row-start-2 col-span-2;
     transform: scale(0);
     animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1);
     animation-fill-mode: forwards;

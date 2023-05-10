@@ -1,5 +1,6 @@
 import { GameProvider } from './contexts/GameContext'
 import { RecordProvider } from './contexts/RecordContext'
+import { ModalProvider } from './contexts/ModalContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -20,7 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
       <GameProvider>
         <RecordProvider>
-          {children}
+          <ModalProvider>
+            {children}
+          </ModalProvider>
         </RecordProvider>
       </GameProvider>
       </body>

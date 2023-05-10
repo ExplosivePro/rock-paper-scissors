@@ -2,24 +2,54 @@
     @apply flex justify-center;
 }
 .choice-btn:active, .choice-btn.active {
-    @apply translate-y-2 rounded-full;
-    box-shadow: 1px 1px 50px 10px var(--tw-shadow-color);
+    @apply lg:translate-y-2 translate-y-0.5 rounded-full;
+    box-shadow: 1px 1px 25px 10px var(--tw-shadow-color);
     .choice-outer-btn {
-        box-shadow: 0 5px var(--tw-shadow-color);
+        box-shadow: 0 2.5px var(--tw-shadow-color);
     }
     .choice-inner-btn {
-        box-shadow: inset 0px 20px 0 15px #b9c0d3;
+        box-shadow: inset 0px 10px 0 7px #b9c0d3;
     }
 }
+
+
+@media (min-width: 1280px) {
+    .choice-btn:active, .choice-btn.active {
+        box-shadow: 1px 1px 50px 10px var(--tw-shadow-color);
+        .choice-outer-btn {
+            box-shadow: 0 5px var(--tw-shadow-color);
+        }
+        .choice-inner-btn {
+            box-shadow: inset 0px 20px 0 15px #b9c0d3;
+        }
+    }
+}
+
+
 .choice-btn.win .win-animation {
-    @apply animate-ping absolute w-48 h-48 rounded-full opacity-10 bg-gradient-radial from-blue-100 to-blue-600;
+    @apply animate-ping absolute lg:w-48 lg:h-48 w-24 h-24 rounded-full opacity-10 bg-gradient-radial from-blue-100 to-blue-600;
 }
 
 .choice-outer-btn {
-    @apply w-48 h-48 rounded-full absolute cursor-pointer;
-    box-shadow: 0 6px var(--tw-shadow-color);
-    border-width: 30px;
+    @apply lg:w-48 lg:h-48 h-24 w-24 rounded-full absolute cursor-pointer;
+
+    box-shadow: 0 3px var(--tw-shadow-color);
+    border-width: 15px;
 }
+@media (min-width: 1280px) {
+    .choice-outer-btn {
+        box-shadow: 0 6px var(--tw-shadow-color);
+        border-width: 30px;
+    }
+}
+
+.choice-image-wrapper {
+    @apply md:w-16 md:h-16 w-8 h-8 relative;
+    .choice-image {
+        @apply w-full;
+    }
+}
+
 .choice-rock {
     @apply shadow-rose-600;
     .choice-outer-btn {
@@ -52,9 +82,15 @@
 }
 
 .choice-inner-btn {
-    @apply w-48 h-48 bg-white rounded-full flex items-center justify-center;
-    box-shadow: inset 0px 20px 0 18px #b9c0d3;
+    @apply lg:w-48 lg:h-48 w-24 h-24 bg-white rounded-full flex items-center justify-center;
+    box-shadow: inset 0px 10px 0 9px #b9c0d3;
+}
+
+@media (min-width: 1280px) {
+    .choice-inner-btn {
+        box-shadow: inset 0px 20px 0 18px #b9c0d3;
+    }
 }
 .choice-empty {
-    @apply bg-[#17223e] w-48 h-48 rounded-full;
+    @apply bg-[#17223e] lg:w-48 lg:h-48 w-24 h-24 rounded-full;
 }

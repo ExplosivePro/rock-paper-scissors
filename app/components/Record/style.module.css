@@ -1,16 +1,16 @@
 .record-wrapper {
-    @apply flex flex-row justify-between items-center border-4 border-slate-500 w-1/2 rounded-xl p-4 text-white;
+    @apply flex flex-row justify-between items-center border-4 border-slate-500 md:w-1/2 w-full rounded-xl md:p-4 p-2 text-white;
     .record-item {
-        @apply text-xl font-bold;
+        @apply md:text-xl text-lg font-bold;
     }
     .record-score {
-        @apply text-gray-600 bg-white w-32 rounded-xl flex flex-col items-center justify-center h-32;
+        @apply text-gray-600 bg-white md:w-32 w-24 md:h-32 h-24 rounded-xl flex flex-col items-center justify-center;
         
     }
     .record-score-label {
-        @apply text-blue-600 text-lg;
+        @apply text-blue-600 md:text-lg;
     }
     .record-score-value {
-        @apply text-5xl font-bold;
+        @apply md:text-5xl text-3xl font-bold;
     }
 }

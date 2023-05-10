@@ -1,0 +1,21 @@
+.modal-container {
+    @apply fixed z-10 inset-0 overflow-y-auto flex items-center;
+    .modal-bg-wrapper {
+        @apply fixed inset-0 transition-opacity;
+        .modal-bg {
+            @apply absolute inset-0 bg-gray-950 opacity-75;
+        }
+    }
+    .modal-body {
+        @apply flex flex-col bg-white rounded-lg text-left overflow-hidden shadow-xl  transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full m-auto h-fit items-center;
+        .close-btn {
+            @apply absolute md:right-2 md:top-2 bottom-2 md:bottom-auto text-2xl;
+        }
+        .modal-content {
+            @apply md:p-8 p-4 pb-16;
+            .modal-title {
+                @apply text-2xl font-bold text-center mb-8;
+            }
+        }
+    }
+}

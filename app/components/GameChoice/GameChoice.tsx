@@ -14,12 +14,14 @@ const GameChoice: React.FC<GameChoiceProps> = ({ choice, className }) => {
                 <>
                 <div className={`${styles["choice-outer-btn"]}`}></div>
                     <div className={styles["choice-inner-btn"]}>
-                        <Image
-                            src={`/images/icon-${choice}.svg`}
-                            alt={choice ?? "game choice"}
-                            width={60}
-                            height={60}
-                        />
+                        <div className={styles["choice-image-wrapper"]}>
+                            <Image
+                                className={styles["choice-image"]}
+                                src={`/images/icon-${choice}.svg`}
+                                alt={choice ?? "game choice"}
+                                fill
+                            />
+                        </div>
                     </div>
                 </>
             ): (

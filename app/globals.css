@@ -16,3 +16,6 @@ body {
     var(--background-end-rgb)
   );
 }
+.rule-button {
+  @apply absolute border rounded-lg text-white px-4 py-2 bottom-8 md:bottom-16 md:right-16 text-lg uppercase font-bold;
+}
