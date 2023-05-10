@@ -1,5 +1,5 @@
 .result-container {
-    @apply flex flex-row gap-16 text-lg text-white font-bold text-center items-center;
+    @apply flex flex-row gap-16 text-lg text-white font-bold text-center items-center transition-[width] duration-1000;
 }
 
 .choice-label {
@@ -11,9 +11,27 @@
 }
 
 .game-result {
-    @apply text-5xl;
+    @apply text-5xl z-10;
 }
 
 .game-replay {
     @apply uppercase bg-white text-gray-500 w-full rounded-lg p-2 mt-4;
+}
+
+.game-result-wrapper {
+    transform: scale(0);
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1);
+    animation-fill-mode: forwards;
+    margin: 0 -10rem;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        margin: 0;
+    }
 }

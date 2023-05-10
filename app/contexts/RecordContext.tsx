@@ -1,7 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState } from 'react';
-import { Choice, GameOutcome, Result } from '../types';
+import { Choice, GameOutcome } from '../types';
 
 interface RecordContextType {
     records: Choice[],
@@ -34,7 +34,7 @@ export function RecordProvider({ children }: {children: React.ReactNode}) {
             newScore --;
         }
         const newRecords = [outcome.playerChoice , ...records]
-        if (records.length > 5) {
+        if (records.length > 4) {
             newRecords.pop();
         }
 

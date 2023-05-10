@@ -6,6 +6,7 @@ import { choices } from '@/app/utils/constants';
 import styles from './style.module.css';
 import GameChoice from '../GameChoice/GameChoice';
 import { useGameContext } from '@/app/contexts/GameContext';
+import { Choice } from '@/app/types';
 const ChoiceSchema = z.object({
   choice: z.enum(['rock', 'paper', 'scissors']),
 });
@@ -24,14 +25,14 @@ const ChoiceForm: React.FC = () => {
     <form onSubmit={handleSubmit(data => setPlayerChoice(data.choice) )} className={styles["choice-form"]}>
       <div className={styles["choice-form-options"]}>
         {choices.map(choice => (
-            <label className="block" key={choice}>
-                <input type="radio" value={choice as string} {...register('choice')} className={styles['choice-option']}/>
-                <GameChoice choice={choice} className={`${watch('choice') == choice ? 'active': ''}`}/>
+            <label className={styles["choice-option-wrapper"]} key={choice}>
+                <input type="radio" value={choice} {...register('choice')} className={styles['choice-option']}/>
+                <GameChoice choice={choice as Choice} className={`${watch('choice') == choice ? 'active': ''}`}/>
             </label>
 
         ))}
       </div>
-      <button type="submit">
+      <button type="submit" className={styles["choice-confirm"]} hidden={!watch('choice')}>
         Play
       </button>
     </form>

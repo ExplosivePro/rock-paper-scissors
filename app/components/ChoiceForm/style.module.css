@@ -1,9 +1,52 @@
 .choice-form {
-    @apply flex flex-col space-y-4 mt-8;
+    @apply flex flex-col space-y-12 mt-8;
     .choice-form-options {
         @apply flex flex-row space-x-8;
+        .choice-option-wrapper {
+            animation: slide-in 1s ease-in-out forwards;
+            transform: translateY(-600px);
+        }
+        .choice-option-wrapper:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+        .choice-option-wrapper:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
         .choice-option {
             @apply hidden;
         }
     }
+    .choice-confirm {
+        @apply px-4 py-2 bg-white rounded-lg text-gray-500 w-fit self-center;
+    }
 }
+
+
+@keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-600px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+  

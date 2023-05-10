@@ -1,12 +1,15 @@
 .choice-btn:active, .choice-btn.active {
-    @apply translate-y-4;
+    @apply translate-y-4 rounded-full;
+    box-shadow: 1px 1px 50px 10px var(--tw-shadow-color);
     .choice-outer-btn {
-        box-shadow: 1px 1px 10px 4px var(--tw-shadow-color);
+        box-shadow: 0 5px var(--tw-shadow-color);
     }
     .choice-inner-btn {
-        box-shadow: none;
+        box-shadow: inset 0px 25px 0 15px #b9c0d3;
     }
-    
+}
+.choice-btn.win .win-animation {
+    @apply animate-ping absolute w-64 h-64 rounded-full opacity-10 bg-gradient-radial from-blue-100 to-blue-600;
 }
 
 .choice-outer-btn {
@@ -15,19 +18,34 @@
     border-width: 35px;
 }
 .choice-rock {
-    @apply border-rose-500 shadow-rose-600;
+    @apply shadow-rose-600;
+    .choice-outer-btn {
+        @apply border-rose-500;
+    }
 }
 .choice-paper {
-    @apply border-sky-500 shadow-sky-600;
+    @apply shadow-sky-600;
+    .choice-outer-btn {
+        @apply border-sky-500;
+    }
 }
 .choice-scissors {
-    @apply border-yellow-500 shadow-yellow-600;
+    @apply shadow-yellow-600;
+    .choice-outer-btn {
+        @apply border-yellow-500;
+    }
 }
 .choice-spock {
-    @apply border-cyan-500 shadow-cyan-600;
+    @apply shadow-cyan-600;
+    .choice-outer-btn {
+        @apply border-cyan-500;
+    }
 }
 .choice-lizard {
-    @apply border-violet-500 shadow-violet-600;
+    @apply shadow-violet-600;
+    .choice-outer-btn {
+        @apply border-violet-500;
+    }
 }
 
 .choice-inner-btn {

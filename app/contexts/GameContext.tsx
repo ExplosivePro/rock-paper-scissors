@@ -32,6 +32,7 @@ export function GameProvider({ children }: {children: React.ReactNode}) {
 
   const replay = () => {
     setComputerChoice(null)
+    setPlayerChoice(null)
     setGameResult(null)
   }
   return (

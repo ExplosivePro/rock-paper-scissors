@@ -1,3 +1,1 @@
-import { Choice } from "../types";
-
-export const choices:Choice[] = ['rock', 'paper', 'scissors'];
+export const choices = ['rock', 'paper', 'scissors'];
