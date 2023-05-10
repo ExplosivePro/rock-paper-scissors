@@ -1,30 +1,43 @@
-This is a simple [Rock, Paper, Scissors](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH) game. It is using [Next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/).
+# Frontend Mentor - Rock, Paper, Scissors solution
 
-# Live Version
-You can play the game [here](https://rock-paper-scissors.vercel.app).
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). It is using [Next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/).
 
-# Game Rule
-<image src="./public/images/image-rules-bonus.svg"/>
+## Table of contents
 
-## How to run?
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
 
-First, install the dependencies
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
+## Overview
 
-Next, run the project
+Users are be able to:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors, Lizard, Spock against the computer
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Screenshot
+
+![](./screenshot-1.png)
+<img src="./screenshot-2.png" height="290" />
+<img src="./screenshot-3.png" height="290" />
+
+### Links
+
+- [Code](https://github.com/ExplosivePro/rock-paper-scissors)
+- [Live Site](https://rock-paper-scissors-iota-dun.vercel.app/)
+
+
+## Built with
+
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [tailwindcss](https://tailwindcss.com/) - For styling
+- [React Context](https://react.dev/reference/react/useContext) - For state management
+
+## Author
+explosive0105@gmail.com
+
+Speed Demon
